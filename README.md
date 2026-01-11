@@ -6,3 +6,7 @@ curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch \
 
 
 sudo nano /etc/kibana/kibana.yml
+
+
+sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+
