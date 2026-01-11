@@ -1,1 +1,4 @@
-echo "deb [signed-by=/usr/share/keyrings/elastic-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+sudo rm -f /usr/share/keyrings/elastic-keyring.gpg
+
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch \
+| sudo gpg --dearmor --yes -o /usr/share/keyrings/elastic-keyring.gpg
