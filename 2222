@@ -1,11 +1,2 @@
-winlogbeat.event_logs:
-  - name: Security
-
-output.logstash:
-  hosts: ["192.168.56.103:5044"]
-
-logging.level: info
-logging.to_files: true
-logging.files:
-  path: C:/Program Files/winlogbeat/logs
-  name: winlogbeat
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.17.0-amd64.deb
+sudo dpkg -i filebeat-8.17.0-amd64.deb
