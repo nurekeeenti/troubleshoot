@@ -1,9 +1,5 @@
-filebeat.inputs:
-  - type: log
-    enabled: true
-    paths:
-      - /var/log/syslog
-      - /var/log/auth.log
+sudo /usr/share/kibana/bin/kibana-encryption-keys generate
 
-output.logstash:
-  hosts: ["localhost:5044"]
+xpack.encryptedSavedObjects.encryptionKey: "abc..."
+xpack.reporting.encryptionKey: "def..."
+xpack.security.encryptionKey: "ghi..."
