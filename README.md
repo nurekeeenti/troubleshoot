@@ -1,1 +1,2 @@
-Get-Content "C:\Program Files\Winlogbeat\logs\winlogbeat.log" -Tail 100
+
+PowerShell.exe -ExecutionPolicy UnRestricted -File .\install-service-winlogbeat.ps1
