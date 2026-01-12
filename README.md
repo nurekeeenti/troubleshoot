@@ -1,5 +1,3 @@
-winlogbeat.event_logs:
-  - name: Security
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
-output.logstash:
-  hosts: ["192.168.56.103:5044"]
+.\install-service-winlogbeat.ps1
