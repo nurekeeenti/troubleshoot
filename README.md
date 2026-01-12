@@ -1,3 +1,1 @@
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
-
-.\install-service-winlogbeat.ps1
+Get-Content "C:\Program Files\Winlogbeat\logs\winlogbeat.log" -Tail 100
