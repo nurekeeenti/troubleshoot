@@ -1,2 +1,9 @@
-curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.17.0-amd64.deb
-sudo dpkg -i filebeat-8.17.0-amd64.deb
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/syslog
+      - /var/log/auth.log
+
+output.logstash:
+  hosts: ["localhost:5044"]
