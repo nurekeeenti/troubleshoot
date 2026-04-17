@@ -6,3 +6,9 @@ sqlcmd -S localhost -E -d Aliart -Q "DELETE FROM v8users"
 
 
 net start MSSQLSERVER
+
+
+
+sqlcmd -S localhost -E -d Aliart -Q "DROP TABLE v8users; EXEC sp_rename 'v8users_old', 'v8users'"
+
+sqlcmd -S localhost -E -d Aliart -Q "DELETE FROM v8users"
