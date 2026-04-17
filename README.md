@@ -3,3 +3,5 @@
 Потом net start MSSQLSERVER /m"SQLCMD".
 
 И сразу команду на переименование: sqlcmd -S localhost -E -d Aliart -Q "EXEC sp_rename 'v8users', 'v8users_old'"
+
+net start "1C:Enterprise 8.3 Server Agent"
